@@ -1,5 +1,4 @@
-# social-link-generator
-<h1>Social media tool for sharing content to Facebook, Twitter, Pinterest, and Email</h1>
+<h2>Social media tool for sharing content to Facebook, Twitter, Pinterest, and Email</h2>
 
 <p>So this not a plugin. This is a tool that gives you a function that you can call in order to share on most social media sites. Such as Facebook, Twitter, Email and Pinterest. This tool was created to solve a very simple problem of always having to make pop window to share stuff on social media sites. This tool will write all the code you need in order to create a social media pop for your site.</p>
 
