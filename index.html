@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+      <ul class="no-bullet">
+        <li>
+          <dl class="accordion" data-accordion="myAccordionGroup"></dl>
+        </li>
+      </ul>
+      <script id="entry-template" type="text/x-handlebars-template">
+        {{#each form}}
+         <dd class="accordion-navigation">
+            <a href="#{{slideId}}">{{formName}}</a>
+            <div id="{{slideId}}" class="content {{#if active}} active{{/if}}">
+              <form action="#" id={{id}}>
+                {{#each formElemnts}}
+                  {{#if input}}
+                    <input type="{{type}}" name="{{name}}" placeholder="{{placeholder}}" {{#if required}}required{{/if}} />
+                  {{else}}
+                    <textarea name="{{name}}" cols="30" rows="10" placeholder="{{placeholder}}" {{#if required}}required{{/if}}></textarea>
+                  {{/if}}
+                {{/each}}
+                <button type="submit">submit</button>
+                <a href="#" class="demo clearfix">{{linkName}}</a>
+                <label for="lbi-link">Call Function</label>
+                <input type="text" class="lbi-link copy-js" placeholder="LBI link" />
+                <label for="lbi-markup">Function</label>
+                <input type="text" class="lbi-markup copy-js" placeholder="LBI Markup" />
+              </form>
+            </div>
+          </dd>
+        {{/each}}
+      </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
