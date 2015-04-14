@@ -152,7 +152,7 @@ var twitterOptions = {}, pinitOptions= {},emailOptions = {},
 	fbOptions = {
 		app_id: "184859551535099",
 		display: "popup",
-		redirect_uri: "http://carlosagosto.com/close.html"
+		redirect_uri: "http://socialshare.carlosagosto.com/close.html"
 	},
 	fbSettings = {
 		baseURL: "https://www.facebook.com/dialog/feed",
